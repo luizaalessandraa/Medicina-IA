@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial;
-    background-image: url('imagens/fundo pagina oq é.png');
+    background-image: url('imagens/segundo fundo pagina oq é.png');
     background-size: cover;
     background-attachment: fixed;
     color: white;
@@ -50,10 +50,6 @@ body {
     padding: 80px 60px;
     align-items: center;
     justify-content: flex-start;
-    background-image: url('imagens/celebelo.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
     min-height: 500px;
 }
 
@@ -116,6 +112,10 @@ body {
 
 .sessao-transformacao {
     padding: 60px 60px 100px 60px;
+    background-image: url('imagens/imagem medico.png');
+    background-size: 600px;
+    background-position: right center;
+    background-repeat: no-repeat;
 }
 
 .sessao-transformacao h2 {
@@ -126,7 +126,7 @@ body {
 .conteudo-transformacao {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .texto-transformacao p {
@@ -135,6 +135,6 @@ body {
     color: #cccccc;
 }
 
-.imagem-medico img {
-    width: 400px;
+.imagem-medico {
+    display: none;
 }
