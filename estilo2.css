@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background-image: url('imagens/fundo pagina oq é.png');
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: rgba(0, 12, 29, 0.8);
+}
+
+.logotipo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.navegacao {
+    display: flex;
+    gap: 40px;
+}
+
+.navegacao a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navegacao a:hover {
+    color: #0095ff;
+}
+
+.primeira-sessao {
+    display: flex;
+    padding: 80px 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteudo-esquerda h1 {
+    font-size: 58px;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.azul {
+    color: #0095ff;
+}
+
+.conteudo-esquerda p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+.imagem-cerebro img {
+    width: 500px;
+}
+
+.cards-ia {
+    display: flex;
+    gap: 30px;
+    padding: 0 60px 80px 60px;
+    justify-content: center;
+}
+
+.cartao {
+    background-color: rgba(0, 20, 40, 0.6);
+    border: 2px solid #0095ff;
+    border-radius: 15px;
+    padding: 40px 30px;
+    text-align: center;
+    width: 220px;
+}
+
+.cartao img {
+    width: 70px;
+    margin-bottom: 20px;
+}
+
+.cartao h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.cartao p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #aaaaaa;
+}
+
+.sessao-transformacao {
+    padding: 60px 60px 100px 60px;
+}
+
+.sessao-transformacao h2 {
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+
+.conteudo-transformacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.texto-transformacao p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #cccccc;
+}
+
+.imagem-medico img {
+    width: 600px;
+}
