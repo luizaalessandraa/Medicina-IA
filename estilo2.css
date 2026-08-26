@@ -51,10 +51,6 @@ body {
     align-items: center;
     justify-content: flex-start;
     min-height: 500px;
-    background-image: url('imagens/celebelo.png');
-    background-size: 700px;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .conteudo-esquerda {
