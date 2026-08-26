@@ -53,10 +53,17 @@ body {
     font-size: 13px;
     font-weight: 500;
     transition: color 0.3s;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
 }
 
 .navegacao a:hover {
     color: #0095ff;
+}
+
+.navegacao a.ativo {
+    color: #0095ff;
+    border-bottom: 2px solid #0095ff;
 }
 
 .conteudo-principal {
