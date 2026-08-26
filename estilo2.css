@@ -6,9 +6,7 @@
 
 body {
     font-family: Arial;
-    background-image: url('imagens/segundo fundo pagina oq é.png');
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: #000814;
     color: white;
 }
 
@@ -26,6 +24,22 @@ body {
     gap: 10px;
     font-weight: bold;
     font-size: 14px;
+}
+
+.texto-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-logo {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.subtitulo-logo {
+    font-size: 11px;
+    color: #0095ff;
+    font-weight: normal;
 }
 
 .navegacao {
@@ -49,16 +63,17 @@ body {
     display: flex;
     padding: 100px 60px;
     align-items: center;
-    justify-content: flex-start;
-    min-height: 500px;
+    justify-content: space-between;
+    min-height: 600px;
     background-image: url('imagens/fundo pagina oq é.png');
     background-size: cover;
-    background-position: center;
+    background-position: side;
     background-repeat: no-repeat;
 }
 
 .conteudo-esquerda {
     max-width: 400px;
+    z-index: 2;
 }
 
 .conteudo-esquerda h1 {
@@ -72,13 +87,13 @@ body {
 }
 
 .conteudo-esquerda p {
-    font-size: 14px;
+    font-size: 20px;
     line-height: 1.6;
     color: #cccccc;
 }
 
 .imagem-cerebro img {
-    width: 500px;
+    display: none;
 }
 
 .cards-ia {
@@ -116,23 +131,43 @@ body {
 
 .sessao-transformacao {
     padding: 60px 60px 100px 60px;
+    min-height: 450px;
+    position: relative;
     background-image: url('imagens/segundo fundo pagina oq é.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 450px;
+}
+
+.sessao-transformacao::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 650px;
+    height: 450px;
+    background-image: url('imagens/imagem medico.png');
+    background-size: contain;
+    background-position: center right;
+    background-repeat: no-repeat;
+    z-index: 1;
 }
 
 .sessao-transformacao h2 {
     font-size: 32px;
     margin-bottom: 60px;
     max-width: 600px;
+    position: relative;
+    z-index: 2;
 }
 
 .conteudo-transformacao {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    position: relative;
+    z-index: 2;
 }
 
 .texto-transformacao {
@@ -140,7 +175,7 @@ body {
 }
 
 .texto-transformacao p {
-    font-size: 15px;
+    font-size: 20px;
     line-height: 1.7;
     color: #cccccc;
 }

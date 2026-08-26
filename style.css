@@ -26,6 +26,22 @@ body {
     font-size: 14px;
 }
 
+.texto-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-logo {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.subtitulo-logo {
+    font-size: 11px;
+    color: #0095ff;
+    font-weight: normal;
+}
+
 .navegacao {
     display: flex;
     gap: 40px;
