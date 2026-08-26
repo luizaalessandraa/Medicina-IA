@@ -47,10 +47,14 @@ body {
 
 .primeira-sessao {
     display: flex;
-    padding: 80px 60px;
+    padding: 100px 60px;
     align-items: center;
     justify-content: flex-start;
     min-height: 500px;
+    background-image: url('imagens/celebelo.png');
+    background-size: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .conteudo-esquerda {
