@@ -15,7 +15,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 60px;
-    background-color: rgba(0, 12, 29, 0.95);
+    background-color: #000c1d;
     position: relative;
     z-index: 10;
 }
@@ -72,9 +72,9 @@ body {
     padding: 80px 60px 60px 60px;
     background-image: url('imagens/futuro/fundo futuro.png');
     background-size: cover;
-    background-position: center;
+    background-position: right center;
     background-repeat: no-repeat;
-    min-height: calc(100vh - 80px);
+    min-height: 100vh;
 }
 
 .topo {
