@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background-color: #000814;
+    color: white;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: rgba(0, 12, 29, 0.8);
+}
+
+.logotipo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.texto-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-logo {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.subtitulo-logo {
+    font-size: 11px;
+    color: #0095ff;
+    font-weight: normal;
+}
+
+.navegacao {
+    display: flex;
+    gap: 40px;
+}
+
+.navegacao a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    transition: color 0.3s;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+.navegacao a:hover {
+    color: #0095ff;
+}
+
+.navegacao a.ativo {
+    color: #0095ff;
+    border-bottom: 2px solid #0095ff;
+}
+
+.conteudo {
+    padding: 60px 60px 0 60px;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.texto-topo h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.azul {
+    color: #0095ff;
+}
+
+.texto-topo p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #cccccc;
+}
+
+.imagem-corpo {
+    width: 400px;
+}
+
+.cards-container {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.card-beneficios {
+    flex: 1;
+    background-color: rgba(0, 30, 60, 0.5);
+    border: 2px solid #0095ff;
+    border-radius: 15px;
+    padding: 35px 40px;
+}
+
+.card-beneficios h2 {
+    color: #0095ff;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.card-desafios {
+    flex: 1;
+    background-color: rgba(0, 30, 60, 0.5);
+    border: 2px solid #ff6b00;
+    border-radius: 15px;
+    padding: 35px 40px;
+}
+
+.card-desafios h2 {
+    color: #ff6b00;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.card-beneficios ul {
+    list-style: none;
+}
+
+.card-desafios ul {
+    list-style: none;
+}
+
+.card-beneficios li {
+    font-size: 14px;
+    line-height: 2;
+    color: #cccccc;
+}
+
+.card-desafios li {
+    font-size: 14px;
+    line-height: 2;
+    color: #cccccc;
+}
+
+.secao-futuro {
+    background-color: rgba(0, 40, 80, 0.6);
+    border-radius: 20px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.texto-futuro h2 {
+    color: #0095ff;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.texto-futuro p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #cccccc;
+}
+
+.imagem-futuro {
+    width: 350px;
+    border-radius: 10px;
+}
+
+.rodape-fundo {
+    width: 100%;
+}
+
+.imagem-rodape {
+    width: 100%;
+    display: block;
+}
