@@ -72,9 +72,8 @@ body {
     padding: 80px 60px 60px 60px;
     background-image: url('imagens/futuro/fundo futuro.png');
     background-size: cover;
-    background-position: right center;
+    background-position: right top;
     background-repeat: no-repeat;
-    min-height: 100vh;
 }
 
 .topo {
@@ -108,7 +107,7 @@ body {
     display: flex;
     gap: 50px;
     margin-bottom: 100px;
-    max-width: 900px;
+    max-width: 750px;
 }
 
 .card-beneficios {
@@ -160,12 +159,21 @@ body {
 }
 
 .secao-futuro {
-    background-color: rgba(0, 50, 100, 0.5);
+    background-image: url('imagens/futuro/fundo baixo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 25px;
     padding: 60px 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+}
+
+.texto-futuro {
+    position: relative;
+    z-index: 2;
 }
 
 .texto-futuro h2 {
@@ -183,4 +191,6 @@ body {
 .imagem-futuro {
     width: 380px;
     border-radius: 10px;
+    position: relative;
+    z-index: 2;
 }
