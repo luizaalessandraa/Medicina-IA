@@ -113,9 +113,10 @@ body {
 .sessao-transformacao {
     padding: 60px 60px 100px 60px;
     background-image: url('imagens/imagem medico.png');
-    background-size: 600px;
+    background-size: 700px;
     background-position: right center;
     background-repeat: no-repeat;
+    min-height: 450px;
 }
 
 .sessao-transformacao h2 {
@@ -127,6 +128,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+}
+
+.texto-transformacao {
+    max-width: 500px;
 }
 
 .texto-transformacao p {
