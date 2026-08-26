@@ -138,6 +138,11 @@ body {
 
 .caixa {
     text-align: center;
+    transition: transform 0.3s;
+}
+
+.caixa:hover {
+    transform: scale(1.1);
 }
 
 .caixa img {
