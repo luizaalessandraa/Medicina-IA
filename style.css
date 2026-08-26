@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background-color: #000814;
+    color: white;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #000c1d;
+}
+
+.logotipo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.navegacao {
+    display: flex;
+    gap: 40px;
+}
+
+.navegacao a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.principal {
+    display: flex;
+    padding: 80px 60px;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('imagens/Imagem index.png');
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    min-height: 600px;
+}
+
+.texto {
+    max-width: 600px;
+}
+
+.texto h1 {
+    font-size: 68px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.azul {
+    color: #0095ff;
+}
+
+.paragrafo {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    color: #aaaaaa;
+}
+
+.botoes {
+    display: flex;
+    gap: 20px;
+}
+
+.botao1 {
+    background-color: #0095ff;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 25px;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.botao2 {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #0095ff;
+    padding: 15px 35px;
+    border-radius: 25px;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.imagem {
+    display: none;
+}
+
+.sessao {
+    padding: 60px 60px 100px 60px;
+}
+
+.sessao h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 60px;
+    font-weight: 400;
+}
+
+.caixas {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    border: 2px solid #0095ff;
+    padding: 60px 40px;
+    border-radius: 15px;
+}
+
+.caixa {
+    text-align: center;
+}
+
+.caixa img {
+    width: 80px;
+    margin-bottom: 25px;
+}
+
+.caixa p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #cccccc;
+}
