@@ -6,7 +6,11 @@
 
 body {
     font-family: Arial;
-    background-color: #000814;
+    background-image: url('imagens/futuro/fundo futuro.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     color: white;
 }
 
@@ -72,7 +76,7 @@ body {
 
 .topo {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     margin-bottom: 80px;
 }
