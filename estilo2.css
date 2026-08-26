@@ -51,6 +51,10 @@ body {
     align-items: center;
     justify-content: flex-start;
     min-height: 500px;
+    background-image: url('imagens/fundo pagina oq é.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .conteudo-esquerda {
@@ -112,9 +116,9 @@ body {
 
 .sessao-transformacao {
     padding: 60px 60px 100px 60px;
-    background-image: url('imagens/imagem medico.png');
-    background-size: 700px;
-    background-position: right center;
+    background-image: url('imagens/segundo fundo pagina oq é.png');
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     min-height: 450px;
 }
@@ -122,6 +126,7 @@ body {
 .sessao-transformacao h2 {
     font-size: 32px;
     margin-bottom: 60px;
+    max-width: 600px;
 }
 
 .conteudo-transformacao {
