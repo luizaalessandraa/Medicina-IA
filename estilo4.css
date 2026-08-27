@@ -186,12 +186,26 @@ body {
 .secao-futuro {
     background-color: rgba(0, 50, 100, 0.5);
     border-radius: 25px;
-    padding: 60px 70px;
+    padding: 80px 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
     z-index: 5;
+    gap: 60px;
+}
+
+.meio-futuro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 280px;
+}
+
+.meio-futuro p {
+    font-size: 14px;
+    color: #cccccc;
+    line-height: 1.7;
 }
 
 .texto-futuro {
@@ -202,12 +216,12 @@ body {
 .texto-futuro h2 {
     color: #0095ff;
     font-size: 38px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 .texto-futuro p {
-    font-size: 15px;
-    line-height: 1.8;
+    font-size: 16px;
+    line-height: 2;
     color: #cccccc;
 }
 
