@@ -78,7 +78,9 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 80px 60px 60px 60px;
-    background: #000814;
+    background-image: url('imagens/sobrenos/fundo.png');
+    background-size: cover;
+    background-position: center;
     border-bottom: 1px solid rgba(0, 149, 255, 0.1);
 }
 
