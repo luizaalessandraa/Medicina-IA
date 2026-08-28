@@ -74,40 +74,10 @@ body {
     display: flex;
     align-items: center;
     padding: 80px 60px;
-    background:
-        radial-gradient(ellipse at 75% 50%, rgba(0, 80, 200, 0.18) 0%, transparent 55%),
-        radial-gradient(ellipse at 20% 80%, rgba(0, 40, 120, 0.12) 0%, transparent 40%),
-        linear-gradient(160deg, #000c1e 0%, #001433 50%, #000c1e 100%);
-    position: relative;
-    overflow: hidden;
+    background: #000814;
 }
 
-.hero::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image:
-        linear-gradient(rgba(0, 149, 255, 0.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0, 149, 255, 0.04) 1px, transparent 1px);
-    background-size: 55px 55px;
-    pointer-events: none;
-}
 
-.hero::after {
-    content: '';
-    position: absolute;
-    right: 15%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 420px;
-    height: 420px;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 149, 255, 0.12);
-    box-shadow:
-        0 0 60px rgba(0, 149, 255, 0.08),
-        inset 0 0 60px rgba(0, 149, 255, 0.05);
-    pointer-events: none;
-}
 
 .hero-esquerda {
     position: relative;

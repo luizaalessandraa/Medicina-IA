@@ -78,22 +78,11 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 80px 60px 60px 60px;
-    background: linear-gradient(160deg, #000c1e 0%, #001433 60%, #000c1e 100%);
-    position: relative;
-    overflow: hidden;
+    background: #000814;
     border-bottom: 1px solid rgba(0, 149, 255, 0.1);
 }
 
-.secao-intro::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image:
-        linear-gradient(rgba(0, 149, 255, 0.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0, 149, 255, 0.04) 1px, transparent 1px);
-    background-size: 50px 50px;
-    pointer-events: none;
-}
+
 
 .intro-texto {
     position: relative;
@@ -121,43 +110,7 @@ body {
     color: #8faabb;
 }
 
-.intro-grafico {
-    position: relative;
-    z-index: 1;
-    width: 300px;
-    height: 120px;
-    display: flex;
-    align-items: center;
-}
 
-.linha-vital {
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #0095ff 20%, #0095ff 40%, transparent 60%, #0095ff 65%, transparent 80%);
-    position: relative;
-}
-
-.linha-vital::before {
-    content: '';
-    position: absolute;
-    top: -30px;
-    left: 40%;
-    width: 2px;
-    height: 60px;
-    background: #0095ff;
-    box-shadow: 0 0 12px #0095ff;
-}
-
-.linha-vital::after {
-    content: '';
-    position: absolute;
-    top: -15px;
-    left: 55%;
-    width: 2px;
-    height: 30px;
-    background: #0095ff;
-    box-shadow: 0 0 8px #0095ff;
-}
 
 .secao-equipe {
     padding: 70px 60px;
