@@ -10,7 +10,6 @@ body {
     color: white;
 }
 
-/* ===== CABEÇALHO ===== */
 .cabecalho {
     display: flex;
     justify-content: space-between;
@@ -20,7 +19,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
-    border-bottom: 1px solid rgba(0, 149, 255, 0.15);
+    border-bottom: 1px solid rgba(0, 149, 255, 0.2);
 }
 
 .logotipo {
@@ -48,7 +47,7 @@ body {
 
 .navegacao {
     display: flex;
-    gap: 40px;
+    gap: 35px;
 }
 
 .navegacao a {
@@ -70,7 +69,6 @@ body {
     border-bottom: 2px solid #0095ff;
 }
 
-/* ===== HERO ===== */
 .hero {
     min-height: calc(100vh - 91px);
     display: flex;
@@ -84,7 +82,6 @@ body {
     overflow: hidden;
 }
 
-/* grade de fundo */
 .hero::before {
     content: '';
     position: absolute;
@@ -96,7 +93,6 @@ body {
     pointer-events: none;
 }
 
-/* anel de luz central */
 .hero::after {
     content: '';
     position: absolute;
@@ -119,7 +115,6 @@ body {
     max-width: 560px;
 }
 
-/* ===== TÍTULOS HERO ===== */
 .titulo-hero {
     font-size: 76px;
     font-weight: 900;
@@ -150,7 +145,6 @@ body {
     font-weight: bold;
 }
 
-/* ===== BADGES ===== */
 .badges {
     display: flex;
     gap: 20px;
@@ -199,7 +193,6 @@ body {
     color: #7a9bb5;
 }
 
-/* ===== BOTÃO COMEÇAR ===== */
 .botao-comecar {
     display: inline-block;
     background: linear-gradient(135deg, #1a8fff, #0060cc);

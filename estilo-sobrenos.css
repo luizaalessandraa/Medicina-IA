@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000c1e;
+    color: white;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: rgba(0, 12, 29, 0.9);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(0, 149, 255, 0.15);
+}
+
+.logotipo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.texto-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-logo {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+.subtitulo-logo {
+    font-size: 11px;
+    color: #0095ff;
+    font-weight: normal;
+}
+
+.navegacao {
+    display: flex;
+    gap: 35px;
+}
+
+.navegacao a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    transition: color 0.3s;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+.navegacao a:hover {
+    color: #0095ff;
+}
+
+.navegacao a.ativo {
+    color: #0095ff;
+    border-bottom: 2px solid #0095ff;
+}
+
+.azul {
+    color: #0095ff;
+}
+
+.secao-intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 60px 60px 60px;
+    background: linear-gradient(160deg, #000c1e 0%, #001433 60%, #000c1e 100%);
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(0, 149, 255, 0.1);
+}
+
+.secao-intro::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(0, 149, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 149, 255, 0.04) 1px, transparent 1px);
+    background-size: 50px 50px;
+    pointer-events: none;
+}
+
+.intro-texto {
+    position: relative;
+    z-index: 1;
+    max-width: 550px;
+}
+
+.label-sobre {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #0095ff;
+    margin-bottom: 14px;
+}
+
+.intro-texto h1 {
+    font-size: 52px;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 24px;
+}
+
+.intro-desc {
+    font-size: 14px;
+    line-height: 1.85;
+    color: #8faabb;
+}
+
+.intro-grafico {
+    position: relative;
+    z-index: 1;
+    width: 300px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.linha-vital {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #0095ff 20%, #0095ff 40%, transparent 60%, #0095ff 65%, transparent 80%);
+    position: relative;
+}
+
+.linha-vital::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: 40%;
+    width: 2px;
+    height: 60px;
+    background: #0095ff;
+    box-shadow: 0 0 12px #0095ff;
+}
+
+.linha-vital::after {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 55%;
+    width: 2px;
+    height: 30px;
+    background: #0095ff;
+    box-shadow: 0 0 8px #0095ff;
+}
+
+.secao-equipe {
+    padding: 70px 60px;
+    background: #000814;
+}
+
+.linha-divisor {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.linha-divisor::before,
+.linha-divisor::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: rgba(0, 149, 255, 0.25);
+}
+
+.linha-divisor span {
+    font-size: 12px;
+    letter-spacing: 5px;
+    color: #0095ff;
+    white-space: nowrap;
+}
+
+.cards-equipe {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.card-membro {
+    flex: 1;
+    background: rgba(0, 20, 50, 0.6);
+    border: 1px solid rgba(0, 149, 255, 0.25);
+    border-radius: 14px;
+    padding: 36px 28px;
+    transition: all 0.3s ease;
+}
+
+.card-membro:hover {
+    border-color: rgba(0, 149, 255, 0.6);
+    transform: translateY(-4px);
+    background: rgba(0, 30, 70, 0.7);
+}
+
+.numero-membro {
+    font-size: 42px;
+    font-weight: 900;
+    color: #0095ff;
+    opacity: 0.6;
+    margin-bottom: 18px;
+    line-height: 1;
+}
+
+.card-membro h3 {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 14px;
+    color: white;
+}
+
+.card-membro p {
+    font-size: 12px;
+    line-height: 1.75;
+    color: #7a9bb5;
+}
+
+.secao-projeto {
+    padding: 0 60px 70px 60px;
+    background: #000814;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.bloco-projeto,
+.bloco-objetivo {
+    background: rgba(0, 20, 50, 0.55);
+    border: 1px solid rgba(0, 149, 255, 0.2);
+    border-radius: 14px;
+    padding: 48px 50px;
+    display: flex;
+    align-items: flex-start;
+    gap: 36px;
+}
+
+.bloco-objetivo {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bloco-objetivo-esquerda {
+    display: flex;
+    align-items: flex-start;
+    gap: 36px;
+    flex: 1;
+}
+
+.icone-bloco {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    flex-shrink: 0;
+    margin-top: 4px;
+}
+
+.imagem-ia {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+    flex-shrink: 0;
+    opacity: 0.85;
+}
+
+.bloco-texto h2 {
+    font-size: 17px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+    color: white;
+}
+
+.bloco-texto p {
+    font-size: 13px;
+    line-height: 1.85;
+    color: #8faabb;
+    margin-bottom: 12px;
+}
+
+.bloco-texto p:last-child {
+    margin-bottom: 0;
+}
+
+.secao-citacao {
+    background: rgba(0, 10, 30, 0.8);
+    border-top: 1px solid rgba(0, 149, 255, 0.1);
+    padding: 60px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.aspas-abre,
+.aspas-fecha {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    flex-shrink: 0;
+    opacity: 0.8;
+}
+
+.secao-citacao p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #ccc;
+    text-align: center;
+}
