@@ -74,7 +74,9 @@ body {
     display: flex;
     align-items: center;
     padding: 80px 60px;
-    background: #000814;
+    background-image: url('imagens/quiz/fundo.png');
+    background-size: cover;
+    background-position: center;
 }
 
 
