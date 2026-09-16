@@ -181,3 +181,192 @@ body {
     transform: translateY(-2px);
     box-shadow: 0 8px 32px rgba(0, 149, 255, 0.55);
 }
+
+.painel-jogo {
+    width: min(850px, 100%);
+    margin: 0 auto;
+    padding: 42px;
+    background: rgba(0, 12, 30, 0.9);
+    border: 1px solid rgba(0, 149, 255, 0.35);
+    border-radius: 12px;
+    box-shadow: 0 12px 45px rgba(0, 0, 0, 0.35);
+}
+
+.cabecalho-jogo,
+.rodape-jogo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.etiqueta-jogo,
+.categoria-jogo,
+.contador-desafios,
+.pontuacao-jogo,
+.aproveitamento-jogo {
+    color: #65beff;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.progresso-jogo {
+    height: 6px;
+    margin: 20px 0 38px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+}
+
+.progresso-preenchido {
+    display: block;
+    height: 100%;
+    background: #0095ff;
+    transition: width 0.3s ease;
+}
+
+.categoria-jogo {
+    margin-bottom: 14px;
+    color: #7a9bb5;
+    font-size: 11px;
+}
+
+.pergunta-jogo {
+    max-width: 700px;
+    margin-bottom: 30px;
+    font-size: clamp(26px, 4vw, 40px);
+    line-height: 1.2;
+}
+
+.alternativas-jogo {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.alternativa-jogo,
+.botao-proximo,
+.botao-reiniciar {
+    border: 1px solid rgba(0, 149, 255, 0.4);
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: 0.2s ease;
+}
+
+.alternativa-jogo {
+    padding: 16px 18px;
+    background: rgba(0, 149, 255, 0.08);
+    text-align: left;
+}
+
+.alternativa-jogo:hover:not(:disabled) {
+    background: rgba(0, 149, 255, 0.2);
+    transform: translateX(4px);
+}
+
+.alternativa-jogo:disabled {
+    cursor: default;
+}
+
+.alternativa-jogo.correta {
+    background: rgba(28, 183, 112, 0.3);
+    border-color: #31d18a;
+}
+
+.alternativa-jogo.incorreta {
+    background: rgba(216, 68, 68, 0.3);
+    border-color: #f47777;
+}
+
+.pontuacao-jogo {
+    color: #7a9bb5;
+    letter-spacing: 1px;
+}
+
+.pontuacao-jogo strong {
+    color: white;
+}
+
+.feedback-jogo {
+    flex: 1;
+    color: #c4d5e3;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.feedback-jogo strong {
+    color: #65beff;
+}
+
+.botao-proximo,
+.botao-reiniciar {
+    padding: 14px 20px;
+    background: #087bd3;
+}
+
+.botao-proximo:hover:not(:disabled),
+.botao-reiniciar:hover {
+    background: #16a0ff;
+    transform: translateY(-2px);
+}
+
+.botao-proximo:disabled {
+    cursor: not-allowed;
+    opacity: 0.35;
+}
+
+.resultado-jogo {
+    text-align: center;
+}
+
+.titulo-resultado {
+    margin: 24px 0 8px;
+    color: #65beff;
+    font-size: clamp(52px, 10vw, 96px);
+}
+
+.titulo-resultado span {
+    color: white;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+.mensagem-resultado {
+    max-width: 540px;
+    margin: 24px auto 32px;
+    color: #c4d5e3;
+    line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+    .cabecalho {
+        padding: 18px 24px;
+    }
+
+    .navegacao {
+        display: none;
+    }
+
+    .hero {
+        min-height: calc(100vh - 87px);
+        padding: 40px 24px;
+    }
+
+    .painel-jogo {
+        padding: 26px 20px;
+    }
+
+    .rodape-jogo {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .botao-proximo,
+    .botao-reiniciar {
+        width: 100%;
+    }
+}
